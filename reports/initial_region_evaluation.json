@@ -1,0 +1,58 @@
+{
+  "dataset": "jsdnrs/ICDAR2019-SROIE",
+  "revision": "bffe40c26759f3376ec2b3ae9031dbba54cd587c",
+  "official_test_receipts": 361,
+  "metric_definition": "case/punctuation-insensitive text match, ISO date equality and Decimal total equality",
+  "oracle_transcription_kie": {
+    "receipts": 361,
+    "field_exact_match": {
+      "company": 0.6343490304709142,
+      "date": 0.8448753462603878,
+      "address": 0.0332409972299169,
+      "total": 0.5457063711911357
+    },
+    "mean_field_exact_match": 0.5145429362880887,
+    "all_fields_exact_match": 0.00554016620498615,
+    "micro_precision": 0.5423357664233577,
+    "micro_recall": 0.5145429362880887,
+    "micro_f1": 0.5280739161336176,
+    "predicted_field_counts": {
+      "company": 338,
+      "date": 310,
+      "address": 361,
+      "total": 361
+    },
+    "failure_count": 701
+  },
+  "ocr_sample_selection": "lowest SHA256(key) values, independent of labels",
+  "tesseract_end_to_end": {
+    "receipts": 40,
+    "field_exact_match": {
+      "company": 0.275,
+      "date": 0.55,
+      "address": 0.125,
+      "total": 0.0
+    },
+    "mean_field_exact_match": 0.23750000000000002,
+    "all_fields_exact_match": 0.0,
+    "micro_precision": 0.4,
+    "micro_recall": 0.2375,
+    "micro_f1": 0.29803921568627456,
+    "predicted_field_counts": {
+      "company": 30,
+      "date": 23,
+      "address": 30,
+      "total": 12
+    },
+    "failure_count": 122
+  },
+  "limitations": [
+    "Malaysian English receipts; no Greek invoice benchmark.",
+    "Different track sizes: full annotated-text test versus a fixed OCR subset.",
+    "Field metrics are project normalization metrics, not the official SROIE leaderboard script.",
+    "Tax/subtotal rules are tested on fixtures only; no tax benchmark is claimed."
+  ],
+  "ocr_failure_count": 9,
+  "ocr_sample_count": 40,
+  "report_scope": "Public aggregates only; per-receipt IDs and field-level records excluded."
+}

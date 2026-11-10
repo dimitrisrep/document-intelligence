@@ -1,0 +1,35 @@
+{
+  "dataset": "jsdnrs/ICDAR2019-SROIE",
+  "revision": "bffe40c26759f3376ec2b3ae9031dbba54cd587c",
+  "license": "CC BY 4.0",
+  "checksums": {
+    "train": "b18c16b4d8481e5e4537a1700e4616907fe4acd92d6362a7e430b0e866213887",
+    "test": "04f8f31b45944cc6e6459a7a95c851a721fc93ffec0a5c29ece9ded734a684c2"
+  },
+  "seed": 42,
+  "alignment": "weak region labels derived from field strings; not official NER labels",
+  "fit_receipts": 523,
+  "validation_receipts": 103,
+  "fit_regions": 15579,
+  "region_class_counts": {
+    "address": 1138,
+    "company": 513,
+    "date": 576,
+    "other": 12135,
+    "total": 1217
+  },
+  "split": "vendor-grouped development partition from official train; no official test used for selection",
+  "vendor_group_overlap": 0,
+  "selected_c": 2.0,
+  "candidates": {
+    "0.5": {
+      "validation_mean_field_exact_match": 0.6601941747572816
+    },
+    "2.0": {
+      "validation_mean_field_exact_match": 0.6650485436893204
+    }
+  },
+  "sklearn_version": "1.8.0",
+  "test_evaluation": "run evaluate separately after selection",
+  "report_scope": "Public aggregates only; split receipt IDs excluded."
+}

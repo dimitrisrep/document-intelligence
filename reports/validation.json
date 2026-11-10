@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-27",
+  "python": "3.12.14",
+  "platform": "Linux CPU",
+  "ruff": "passed",
+  "pytest_passed": 21,
+  "pytest_failed": 0,
+  "clean_environment": "Independent venv; hash-locked requirements installed; package dependency compatibility checked.",
+  "package_build": "wheel and source distribution built successfully",
+  "api_smoke": "actual trained artifacts exercised; input/error/readiness contracts checked",
+  "docker": "configuration supplied, not executed",
+  "ci": "workflow supplied; see GitHub for current remote execution state",
+  "dependency_note": "One Starlette/httpx deprecation warning; tests pass. No warning suppression used.",
+  "requirements_sha256": "cd94193945ce83a12e0a9fd86a23449a8334ee7eb3b02f7fe5d807872a9ac817",
+  "actual_ocr": "Tesseract English tested on authored fixture and fixed 40-image SROIE subset",
+  "fixture": "company/date/total correct; address incomplete and retained in observed JSON"
+}

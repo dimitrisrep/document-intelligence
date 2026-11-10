@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "document-intelligence"
+version = "0.1.0"
+description = "Receipt OCR, learned text/layout extraction, provenance and field-level evaluation"
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<3", "scikit-learn==1.8.0", "joblib>=1.4,<2",
+                "pillow>=10,<13", "pymupdf>=1.24,<2", "pytesseract>=0.3.13,<1", "pyarrow>=16,<27",
+                "pydantic>=2.9,<3", "fastapi>=0.115,<1", "uvicorn>=0.30,<1", "python-multipart>=0.0.20,<1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "httpx>=0.27,<1", "ruff>=0.9,<1", "reportlab>=4,<5"]
+
+[project.scripts]
+document-intelligence = "document_intelligence.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

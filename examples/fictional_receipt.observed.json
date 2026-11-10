@@ -1,0 +1,120 @@
+{
+  "status": "review_required",
+  "fields": {
+    "company": {
+      "value": "ACME DEMO SDN BHD",
+      "model_score": 0.994202870103039,
+      "score_type": "uncalibrated_line_class_score",
+      "evidence": [
+        {
+          "quote": "ACME DEMO SDN BHD",
+          "bbox": [
+            65.0,
+            62.0,
+            445.0,
+            87.0
+          ],
+          "page": 1,
+          "source": "tesseract_eng",
+          "coordinate_units": "image_pixels",
+          "page_size": {
+            "width": 850,
+            "height": 1100
+          },
+          "ocr_confidence": 95.5
+        }
+      ]
+    },
+    "date": {
+      "value": "2024-06-01",
+      "model_score": 0.9992521160250104,
+      "score_type": "uncalibrated_line_class_score",
+      "evidence": [
+        {
+          "quote": "Date: 01/06/2024",
+          "bbox": [
+            68.0,
+            311.0,
+            310.0,
+            334.0
+          ],
+          "page": 1,
+          "source": "tesseract_eng",
+          "coordinate_units": "image_pixels",
+          "page_size": {
+            "width": 850,
+            "height": 1100
+          },
+          "ocr_confidence": 96.0
+        }
+      ]
+    },
+    "address": {
+      "value": "MALAYSIA",
+      "model_score": 0.7851645234788789,
+      "score_type": "uncalibrated_line_class_score",
+      "evidence": [
+        {
+          "quote": "MALAYSIA",
+          "bbox": [
+            68.0,
+            211.0,
+            204.0,
+            231.0
+          ],
+          "page": 1,
+          "source": "tesseract_eng",
+          "coordinate_units": "image_pixels",
+          "page_size": {
+            "width": 850,
+            "height": 1100
+          },
+          "ocr_confidence": 95.0
+        }
+      ]
+    },
+    "total": {
+      "value": "12.00",
+      "model_score": 0.9923426492768072,
+      "score_type": "uncalibrated_line_class_score",
+      "evidence": [
+        {
+          "quote": "TOTAL RM 12.00",
+          "bbox": [
+            65.0,
+            652.0,
+            342.0,
+            677.0
+          ],
+          "page": 1,
+          "source": "tesseract_eng",
+          "coordinate_units": "image_pixels",
+          "page_size": {
+            "width": 850,
+            "height": 1100
+          },
+          "ocr_confidence": 95.33333333333333
+        }
+      ]
+    }
+  },
+  "supplements": {
+    "subtotal": {
+      "value": "10.00",
+      "method": "label_rule_unbenchmarked",
+      "evidence": "Subtotal RM 10.00"
+    },
+    "tax": {
+      "value": "2.00",
+      "method": "label_rule_unbenchmarked",
+      "evidence": "Tax RM 2.00"
+    }
+  },
+  "currency": "MYR",
+  "validation": {
+    "issues": [],
+    "arithmetic": "matched"
+  },
+  "line_count": 12,
+  "automatic_financial_actions": []
+}

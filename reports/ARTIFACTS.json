@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "artifacts": {
+    "extractor.joblib": {
+      "bytes": 2481151,
+      "sha256": "e27024b9e4b5ad2c184ce93c9cd9bef58b268e227618bd556ad70001e8ff0572"
+    }
+  },
+  "note": "Trusted local training output from the separately distributed original archive; binaries are not committed to Git. Train locally from the pinned dataset for a fresh checkout. No raw training text is bundled."
+}

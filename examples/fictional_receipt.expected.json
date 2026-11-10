@@ -1,0 +1,10 @@
+{
+  "purpose": "fictional functional fixture, not benchmark data",
+  "company": "ACME DEMO SDN BHD",
+  "date": "2024-06-01",
+  "address": "10 EXAMPLE ROAD 50000 DEMO CITY MALAYSIA",
+  "total": "12.00",
+  "subtotal": "10.00",
+  "tax": "2.00",
+  "currency": "MYR"
+}
